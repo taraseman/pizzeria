@@ -6,9 +6,11 @@ Implement the function "getPizzaInfo()".<br>
 Your task is to identify the 5 most popular pizzas and make a list of ingredients that have been spent on cooking all pizzas (depending on their quantity).
 
 ### Example
+
+#### INPUT:
 getPizzaInfo(['cap','cap','onions','gavay','cap', 'tonno','vegeterian', 'king_one'])<br>
 
-#### Result:
+#### OUTPUT:
 
 {<br>
  popular: ['cap', 'onions','gavay', 'tonno','vegeterian'],<br>
