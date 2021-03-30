@@ -1,4 +1,4 @@
-# Pizzeria :pizza
+# Pizzeria :blush:
 
 There is a pizzeria where different types of pizza are baked. Each pizza has a lot of ingredients. You are given a list of pizza with ingredients (their quantity).
 At the entrance we have a list of pizzas that have been baked recently.<br>
