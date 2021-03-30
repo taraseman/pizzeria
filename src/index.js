@@ -99,5 +99,3 @@ function getPizzaInfo(lastPizzas) {
     ingridients: currentIngridients.map((ingredient) => ingredient.ingredientName),
   };
 }
-
-console.log(getPizzaInfo(['cap', 'cap', 'onions', 'gavay', 'cap', 'tonno', 'vegeterian', 'king_one']));
