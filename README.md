@@ -7,7 +7,8 @@ Your task is to identify the 5 most popular pizzas and make a list of ingredient
 
 ### Example
 getPizzaInfo(['cap','cap','onions','gavay','cap', 'tonno','vegeterian', 'king_one'])<br>
-####Result:<br>
+
+####Result
 {<br>
  popular: ['cap', 'onions','gavay', 'tonno','vegeterian'],<br>
  ingridients:['onion', 'mushroom', ' cheese', 'dough', 'tomato_sause', 'sausage', 'tomato', 'tuna', 'kappers', 'cucumber' ,'dill', 'parsley', 'meat', 'ananas', 'mayo']<br>
