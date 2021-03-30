@@ -53,6 +53,8 @@ const pizzasMenu = {
 function getPizzaInfo(lastPizzas) {
   if (lastPizzas.length === 0) {
     console.log('The list of last pizzas is empty');
+    
+    return;
   }
 
   const pizzasInfo = [];
