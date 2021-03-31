@@ -50,10 +50,10 @@ const pizzasMenu = {
   },
 };
 
-function getPizzaInfo(lastPizzas) {
+export function getPizzaInfo(lastPizzas) {
   if (lastPizzas.length === 0) {
     console.log('The list of last pizzas is empty');
-    
+
     return;
   }
 
@@ -82,22 +82,22 @@ function getPizzaInfo(lastPizzas) {
         const currentIngridient = currentIngridients
           .find((ingridient) => ingridient.ingredientName === key);
       if (currentIngridient) {
-            currentIngridient.ingredientNumber += pizza.ingridients[key] * pizza.number;
+            currentIngridient.quantity += pizza.ingridients[key] * pizza.number;
         } else {
             currentIngridients.push({
                     ingredientName: key,
-                    ingredientNumber: pizza.ingridients[key] * pizza.number, 
+                    quantity: pizza.ingridients[key] * pizza.number, 
         });
       }
     }
   });
 
   currentIngridients.sort(
-    (ingredientA, ingredientB) => ingredientB.ingredientNumber - ingredientA.ingredientNumber,
+    (ingredientA, ingredientB) => ingredientB.quantity - ingredientA.quantity,
   );
 
   return {
-    popular: top5Pizzas.map((pizza) => pizza.name),
-    ingridients: currentIngridients.map((ingredient) => ingredient.ingredientName),
+    popular: top5Pizzas.map(({ name }) => name),
+    ingridients: currentIngridients.map(({ ingredientName }) => ingredientName),
   };
 }
